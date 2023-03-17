@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: test-component-isnr
+  namespace: build-e2e-isps-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/test-images@sha256:94094341c4790521f31c71856330c52b45bdb0d96dc50768612ddeb1209cc8b6
+        name: my-python
+        resources: {}
+status: {}

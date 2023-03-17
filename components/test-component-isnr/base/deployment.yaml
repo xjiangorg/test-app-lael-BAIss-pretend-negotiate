@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: test-component-isnr
     spec:
       containers:
-      - image: quay.io/redhat-appstudio-qe/test-images:a4bf03ca503546f0a5eb93889674c40b
+      - image: quay.io/redhat-appstudio-qe/test-images@sha256:94094341c4790521f31c71856330c52b45bdb0d96dc50768612ddeb1209cc8b6
         name: my-python
         ports:
         - containerPort: 8081
